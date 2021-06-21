@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #040926;
+  padding: 10px;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*------------------------------------*/
+.wrapper {
+  background-color: #eeeeee;
+}
+
+.wrapper h1 {
+  text-align: center;
+  background-color: #7d2e68;
+  color: #eeeeee;
+  padding: 20px;
+}
+
+.wrapper .score,
+.wrapper .move {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .score .score_board,
+.wrapper .score .your_move,
+.wrapper .score .computer_move,
+.wrapper .move .score_board,
+.wrapper .move .your_move,
+.wrapper .move .computer_move {
+  padding: 15px;
+  font-size: 1.5rem;
+  background-color: #727272;
+  color: #eeeeee;
+  margin: 5px;
+  min-width: 170px;
+  text-align: center;
+}
+
+.wrapper .move .your_move,
+.wrapper .move .computer_move {
+  background-color: #eeeeee;
+  color: #101010;
+  font-weight: 600;
+}
+
+.wrapper .info {
+  background-color: #c97b84;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.wrapper .options {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 20px;
+}
+
+.wrapper .options img {
+  margin: 10px;
+  cursor: pointer;
+  width: 30%;
+  min-width: 30%;
+  max-width: 120px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border: 5px solid #101010;
+}
+
+.wrapper .options img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.wrapper .make_your_move {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 30px;
+}
+
+.footer {
+  padding: 20px;
+  color: #eeeeee;
+}
+
+@media (max-width: 500px) {
+  .wrapper h1 {
+    font-size: 1.6rem;
+  }
+  .wrapper .score p {
+    font-size: 1rem;
+    min-width: 105px;
+  }
+  .wrapper .score .points {
+    min-width: auto;
+  }
+  .wrapper .options img {
+    margin: 5px;
+    min-width: auto;
+    max-width: 100px;
+  }
+  .wrapper .options img:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
